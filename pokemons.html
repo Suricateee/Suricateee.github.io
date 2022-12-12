@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <title> Pokémons </title>
     <link rel="icon" type="image/png" href="favicons/favicon2.png">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/tableauTopImgs.css">
     <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/top.css">
+
 </head>
+
 <body>
+    <div class="topbut">
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    </div>
     <!--Barre de navigation en haut-->
     <div class="topnav">
         <a href="https://suricateee.github.io/TP_Pokemons/">Accueil</a>
@@ -15,67 +22,87 @@
         <a href="musiques.html">Musiques</a>
         <a href="lieux.html">Lieux</a>
         <a href="VotreTop.html">Votre top 10</a>
-        <button onclick="myFunction()" id="myBtn" title="Activer/Désactiver le mode sombre">Mode sombre</button>
+        <button onclick="myFunction()" id="darkmode" title="Activer/Désactiver le mode sombre">Mode sombre</button>
     </div>
     <div class="contenu">
-    <h1> TOP 10 de nos Pokémon préférés.</h1>
-    <table>
-        <tr>
-            <td>10.Mentali<br><img src="img/Mentali.png" alt=""></td>
-            <td>10.Deoxys<br><img src="img/Deoxys.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>9.Dratatin<br><img src="img/Dratatin.png" alt=""></td>
-            <td>9.Nymphali<br><img src="img/Nymphali.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>8.Hydragon<br><img src="img/Hydragon.png" alt=""></td>
-            <td>8.Yveltal<br><img src="img/Yveltal.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>7.Libégon<br><img src="img/Libegon.png" alt=""></td>
-            <td>7.Genesect<br><img src="img/Genesect.png" alt=""></td>
-        </tr>        
-        <tr>
-            <td>6.Crabaraque<br><img src="img/Crabaraque.png" alt=""></td>
-            <td>6.Absol<br><img src="img/Absol.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>5.Mastouffe<br><img src="img/Mastouffe.png" alt=""></td>
-            <td>5.Victini<br><img src="img/Victini.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>4.Feunard D'Alola<br><img src="img/Feunard_Alola.png" alt=""></td>
-            <td>4.Mesmérella<br><img src="img/mesmerella.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>3.Muplodocus<br><img src="img/Muplodocus.png" alt=""></td>
-            <td>3.Mimiqui<br><img src="img/Mimiqui.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>2.Floramantis<br><img src="img/Floramantis.png" alt=""></td>
-            <td>2.Emolga<br><img src="img/Emolga.png" alt=""></td>
-        </tr>
-        <tr>
-            <td>1.Mimiqui<br><img src="img/Mimiqui.png" alt=""></td>
-            <td>1.Lucario<br><img src="img/Lucario.png" alt=""></td>
-        </tr>
-    </table>
+        <h1> TOP 10 de nos Pokémon préférés.</h1>
+        <table>
+            <tr>
+                <td>10.Mentali<br><img src="img/Mentali.png" alt=""></td>
+                <td>10.Deoxys<br><img src="img/Deoxys.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>9.Dratatin<br><img src="img/Dratatin.png" alt=""></td>
+                <td>9.Nymphali<br><img src="img/Nymphali.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>8.Hydragon<br><img src="img/Hydragon.png" alt=""></td>
+                <td>8.Yveltal<br><img src="img/Yveltal.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>7.Libégon<br><img src="img/Libegon.png" alt=""></td>
+                <td>7.Genesect<br><img src="img/Genesect.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>6.Crabaraque<br><img src="img/Crabaraque.png" alt=""></td>
+                <td>6.Absol<br><img src="img/Absol.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>5.Mastouffe<br><img src="img/Mastouffe.png" alt=""></td>
+                <td>5.Victini<br><img src="img/Victini.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>4.Feunard D'Alola<br><img src="img/Feunard_Alola.png" alt=""></td>
+                <td>4.Mesmérella<br><img src="img/mesmerella.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>3.Muplodocus<br><img src="img/Muplodocus.png" alt=""></td>
+                <td>3.Mimiqui<br><img src="img/Mimiqui.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>2.Floramantis<br><img src="img/Floramantis.png" alt=""></td>
+                <td>2.Emolga<br><img src="img/Emolga.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>1.Mimiqui<br><img src="img/Mimiqui.png" alt=""></td>
+                <td>1.Lucario<br><img src="img/Lucario.png" alt=""></td>
+            </tr>
+        </table>
     </div>
-        <!-- Menu de navigation -->
+    <!-- Menu de navigation -->
     <h1 id="Index"><u>Index</u></h1>
     <nav class="menu">
-    <ul>
-        <li><a href="pokemons.html">Pokemons</a></li>
-        <li><a href="musiques.html">Musiques</a></li>
-        <li><a href="lieux.html">Lieux</a></li>
-        <li><a href="VotreTop.html">Votre Top 10</a></li>
-    </ul>
+        <ul>
+            <li><a href="pokemons.html">Pokemons</a></li>
+            <li><a href="musiques.html">Musiques</a></li>
+            <li><a href="lieux.html">Lieux</a></li>
+            <li><a href="VotreTop.html">Votre Top 10</a></li>
+        </ul>
     </nav>
     <script>
         function myFunction() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        
+        // Get the button
+        let mybutton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>
