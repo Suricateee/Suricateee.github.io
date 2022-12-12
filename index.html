@@ -48,6 +48,12 @@
             </ul>
         </nav>
     </div>
-    <button onclick="myFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="myFunction()" id="myBtn" title="Activer/Désactiver le mode sombre">Mode sombre</button>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
