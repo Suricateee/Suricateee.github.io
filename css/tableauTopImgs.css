@@ -1,9 +1,13 @@
+body{
+    align-items: center;
+}
 table{
+        text-align: center;
         width: 100%;
-        border: 1px solid;
+        border: 0px solid;
     }
     
-img{
+img{    
         width: calc(50%-3px);
         height: (50%);
     }
