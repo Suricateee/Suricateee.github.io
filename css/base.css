@@ -1,28 +1,29 @@
 @font-face {
-    font-family: pokemon;
-    src: url(../font/PokemonClassic.ttf);
-  }
+  font-family: pokemon;
+  src: url(../font/PokemonClassic.ttf);
+}
 
-  body{
-    font-family: pokemon;
-    text-align: center;
-    align-items: center;
-    background-image: url("../img/FondBlanc.jpg");
-    color: black;
-  }
+body{
+  font-family: pokemon;
+  text-align: center;
+  align-items: center;
+  background-image: url("../img/FondBlanc.jpg");
+  color: black;
+  
+}
 
-  .dark-mode {
-    background-color: black;
-    color: white;
-    background-image: url("../img/FondNoir.jpg");
-  }
+.dark-mode {
+  background-color: black;
+  color: white;
+  background-image: url("../img/FondNoir.jpg");
+}
 
-  input[type=text]:focus {
-    border: 3px solid rgb(255, 0, 0);
-  }
-  #Index{
-    text-align: left;
-  }
-  nav{
-    text-align: left;
-  }
+input[type=text]:focus {
+  border: 3px solid rgb(255, 0, 0);
+}
+#Index{
+  text-align: left;
+}
+nav{
+  text-align: left;
+}
