@@ -2,3 +2,8 @@ table{
         width: 100%;
         border: 1px solid;
     }
+    
+img{
+        width: calc(50%-3px);
+        height: (50%);
+    }
