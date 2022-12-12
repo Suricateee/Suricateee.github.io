@@ -4,8 +4,13 @@ body{
 table{
         text-align: center;
         width: 100%;
-        border: 0px solid;
+        border: 2px solid;
+        
     }
+td{
+    border:2px solid;
+    border-color: brown;
+}
     
 img{    
         width: calc(50%-3px);
