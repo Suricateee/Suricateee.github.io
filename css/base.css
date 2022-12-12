@@ -2,12 +2,21 @@
     font-family: pokemon;
     src: url(../font/PokemonClassic.ttf);
   }
+
   body{
     font-family: pokemon;
     text-align: center;
     align-items: center;
     background-image: url("../img/FondBlanc.jpg");
+    color: black;
   }
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+    background-image: url("../img/FondNoir.jpg");
+  }
+
   input[type=text]:focus {
     border: 3px solid rgb(255, 0, 0);
   }
