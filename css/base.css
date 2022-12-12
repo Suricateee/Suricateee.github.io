@@ -20,4 +20,9 @@
   input[type=text]:focus {
     border: 3px solid rgb(255, 0, 0);
   }
-  
+  #Index{
+    text-align: left;
+  }
+  nav{
+    text-align: left;
+  }
