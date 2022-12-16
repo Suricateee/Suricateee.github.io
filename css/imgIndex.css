@@ -1,4 +1,3 @@
-img {
+img:not(#ball) {
     max-width: 80%;
-    height: auto;
   }

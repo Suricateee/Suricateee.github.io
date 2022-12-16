@@ -9,9 +9,7 @@ body{
   align-items: center;
   background-image: url("../img/FondBlanc.jpg");
   color: black;
-  
 }
-
 
 .dark-mode {
   background-color: black;
@@ -22,9 +20,11 @@ body{
 input[type=text]:focus {
   border: 3px solid rgb(255, 0, 0);
 }
+
 #Index{
   text-align: left;
 }
+
 nav{
   text-align: left;
 }

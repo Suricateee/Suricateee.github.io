@@ -1,4 +1,4 @@
-img {
+img:not(#ball) {
     max-width: 70%;
     height: auto;
   }
