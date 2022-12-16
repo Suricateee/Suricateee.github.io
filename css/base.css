@@ -12,6 +12,11 @@ body{
   
 }
 
+#ball{
+  width: 48px; 
+  height: 48px;
+}
+
 .dark-mode {
   background-color: black;
   color: white;
