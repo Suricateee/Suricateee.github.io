@@ -11,14 +11,7 @@ body{
   color: black;
   
 }
-img {
-  max-width: 95%;
-  height: auto;
-}
-#imagemain {
-  max-width: 80%;
-  height: auto;
-}
+
 .dark-mode {
   background-color: black;
   color: white;
