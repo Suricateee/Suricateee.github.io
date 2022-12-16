@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Balises meta -->
     <meta charset="UTF-8">
     <meta name="titre" content="Lieux">
     <meta name="description" content="Page comportant nos lieux préférés de pokémon">
     <meta name="auteur" content="NARDI Fabio, GOUACHE Nathan">
     <title> Lieux </title>
+    <!-- liens vers la favicon et les css-->
     <link rel="icon" type="image/png" href="favicons/favicon4.png">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/bar.css">
@@ -13,6 +15,7 @@
     <link rel="stylesheet" href="css/ville.css">
 </head>
 <body>
+    <!--bouton d'ancrage-->
     <div class="topbut">
         <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
     </div>
@@ -25,46 +28,47 @@
         <a href="VotreTop.html">Votre top 10</a>
         <button onclick="myFunction()" id="myBtn" title="Activer/Désactiver le mode sombre">Mode sombre</button>
     </div>
+    <!--contenu de la page-->
     <h1> TOP 10 des meilleurs lieux de Pokémon.</h1>
 
     <h2>Numero 10 - Cimetronelle</h2>
-    <p></p>
+    <p>En numero 10 , voici Cimetronelle , une jolie ville forestiere avec des maisons sous forme de cabane dans les arbres.</p>
     <img src="img/villes/cimetronelle.png" alt=""> 
 
     <h2>Numero 9 - Lavandia</h2>
-    <p></p>
+    <p>En numero 9 je vous presente Lavandia : une ville sous forme de centre commercial possedant une galerie marchande au rez-de-chaussée et des habitations aux etages superieurs.</p>
     <img src="img/villes/Lavandia.png" alt=""> 
 
     <h2>Numero 8 - Meanville</h2>
-    <p></p>
+    <p>En numero 8 , la ville de Meanville qui est connue pour son parc d'attraction ainsi que pour son stade et sa salle de concert.</p>
     <img src="img/villes/meanville.png" alt=""> 
 
     <h2>Numero 7 - Floraville</h2>
-    <p></p>
+    <p>La ville en 7eme position est la ville fleurie de Sinnoh : Floraville. Comme son nom l'indique, la specialité de cette ville est la culture de fleurs mais aussi la recolte de miel.</p>
     <img src="img/villes/Floraville.png" alt=""> 
 
     <h2>Numero 6 - Celadopole</h2>
-    <p></p>
+    <p>En numero 6 , une ville culte de Kanto , Celadopole. Elle est connue principalement pour son gigantesque centre commercial mais aussi par la presence d'une arene.</p>
     <img src="img/villes/Celadopole.png" alt=""> 
     
     <h2>Numero 5 - Doublonville </h2>
-    <p></p>
+    <p>Doublonville, en numero 5, est une ville flamboyante et aussi la plus grande ville de Johto. On peut y trouver un tres grand centre commercial , un casino et egalement la Tour de diffusion radio de la region.</p>
     <img src="img/villes/Doublonville.png" alt=""> 
 
     <h2>Numero 4 - Corrifey </h2>
-    <p></p>
+    <p>Une tres petite ville en numero 4 : Corrifey. C'est une ville se trouvant dans une foret de la region de Galar qui possede une atmosphere féérique tres agreable et qui rend le lieux tres joli.</p>
     <img src="img/villes/corrifey.png" alt=""> 
 
     <h2>Numero 3 - Atalanopolis </h2>
-    <p></p>
+    <p>Atalanopolis est une ville tres isolée du reste de la region de Hoenn. En effet elle est entourée par un enorme mur de pierre. Elle a une allure tres ancienne et on peut y trouver la <a href="https://www.pokepedia.fr/Grotte_Origine">grotte Origine</a> qui est le lieu d'habitat du pokemon Kyogre et Groudon</p>
     <img src="img/villes/Atalanopolis.png" alt=""> 
 
     <h2>Numero 2 - Illumis </h2>
-    <p></p>
+    <p>Illumis est la capitale de la region de Kalos , inspirée de la France. Elle ressemble alors enormement a Paris avec notamment la tour d'Illumis qui ressemble a le tour eiffel.</p>
     <img src="img/villes/Illumis.png" alt=""> 
 
     <h2>Numero 1 - Volucité </h2>
-    <p></p>
+    <p>Et en Premiere place voici Volucité , une ville portuaire de la region d'Unys, qui est la ville la plus impressionnante de la region et qui possede une musique vraiment geniale.</p>
     <img src="img/villes/Volucité.png" alt=""> 
 
     <!-- Menu de navigation -->
@@ -77,15 +81,16 @@
             <li><a href="VotreTop.html">Votre Top 10</a></li>
         </ul>
     </nav>
+    <!-- Script du bouton -->
     <script>
         function myFunction() {
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
-        // Get the button
+        // lien avec le bouton 
         let mybutton = document.getElementById("topBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
+        // montre le bouton quand l'utilisateur scrolle 20px de la page
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
@@ -96,7 +101,7 @@
             }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
+        // quand le bouton est cliqué , on retourne en haut de la page
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;

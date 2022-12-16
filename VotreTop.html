@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Balises meta -->
     <meta charset="UTF-8">
     <meta name="titre" content="Votre top">
     <meta name="description" content="Page où l'utilisateur peut nous transmettre son top par mail">
     <meta name="auteur" content="NARDI Fabio, GOUACHE Nathan">
     <title> Votre top 10 </title>
+    <!-- liens vers la favicon et les css-->
     <link rel="icon" type="image/png" href="favicons/favicon5.png">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/bar.css">
     <link rel="stylesheet" href="css/top.css">
 </head>
 <body>
+    <!--bouton d'ancrage-->
     <div class="topbut">
         <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
     </div>
@@ -24,7 +27,7 @@
         <a class="active" href="VotreTop.html"><img id="ball" src="img/pokeball-menu.png" alt=""></a>
         <button onclick="myFunction()" id="myBtn" title="Activer/Désactiver le mode sombre">Mode sombre</button>
     </div>
-    <div class="contenu">
+    <!--contenu de la page-->>
     <h1>VOTRE top 10</h1>
     <form id="form" action="mailto:nathan.gouache@gmail.com?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
 	    <p>
@@ -42,7 +45,7 @@
 		    <input type="submit" value="Envoyer">
 	    </p>
     </form>
-    </div>
+    
     <!-- Menu de navigation -->
     <h1 id="Index"><u>Index</u></h1>
     <nav class="menu">
@@ -53,15 +56,16 @@
             <li><a href="lieux.html">Lieux</a></li>
         </ul>
     </nav>
+    <!-- Script du bouton -->
     <script>
         function myFunction() {
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
-        // Get the button
+        // lien avec le bouton 
         let mybutton = document.getElementById("topBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
+        // montre le bouton quand l'utilisateur scrolle 20px de la page
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
@@ -72,7 +76,7 @@
             }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
+        // quand le bouton est cliqué , on retourne en haut de la page
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;

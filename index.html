@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Balises meta -->
     <meta charset="UTF-8">
     <meta name="titre" content="Page d'accueil">
     <meta name="description" content="Page principale sur laquelle l'utilisateur est censé tomber en premier">
     <meta name="auteur" content="NARDI Fabio, GOUACHE Nathan">
     <title>TOP 10 Pokemon</title>
+    <!-- liens vers la favicon et les css-->
     <link rel="icon" type="image/png" href="favicons/favicon1.png">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/bar.css">
@@ -15,63 +17,65 @@
 </head>
 
 <body>
+    <!-- bouton ancre -->
     <div class="topbut">
         <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
     </div>
     <!--Barre de navigation en haut-->
     <div class="topnav">
-        <a class="active" href="index.html"><img id="ball" src="img/pokeball-menu.png"></a>
+        <a class="active" href="index.html"><img id="ball" src="img/pokeball-menu.png" alt=""></a>
         <a href="pokemons.html">Pokemons</a>
         <a href="musiques.html">Musiques</a>
         <a href="lieux.html">Lieux</a>
         <a href="VotreTop.html">Mon top</a>
         <button onclick="myFunction()" id="myBtn" title="Activer/Désactiver le mode sombre">Mode <br> sombre</button>
     </div>
-    <div class="contenu">
-        <h1>Nos TOP 10 Pokemon</h1>
-        <p>Sur ce site nous allons vous presenter nos differents top 10 de Pokemon.</p>
-        <h2>TOP 10 des Pokemons</h2>
-        <p>
-            Il existe plus de 1000 pokemons, il est donc assez difficile de s'y retrouver ,
-            nous avons alors decidé de vous montrer notre top 10 de nos pokemons
-            favoris respectifs.
-        </p>
-        <p>Cliquez <a href="pokemons.html">ici</a> pour y acceder!</p>
-        <img src="img/top10pokemons.png" alt="Pleins de pokemons accompagnés de deux dresseurs courrant apres un Jirachi"> 
-        
-        <h2>TOP 10 des Musiques</h2>
-        <p>L'univers de Pokemon est un univers florissant de musiques. Nous vous proposons alors un <em>Best-of</em> de nos musiques favories.</p>
-        <p>Cliquez  <a href="musiques.html">ici</a> pour y acceder!</p>
-        <img src="img/Musica.png" alt="Pokemons avec un dresseur et de la musique"> 
-        
-        <h2>TOP 10 des Endroits</h2>
-        <p>Au cours de l'aventure nous avons l'occasion de se balader dans un grand nombre de lieux memorables, voici notre selection de ceux qui sont le plus memorables</p>
-        <p>Cliquez  <a href="lieux.html">ici</a> pour y acceder!</p>
-        <img src="img/Fleurville.png" alt="image pour lieux"> 
-        
-        <h2>Votre TOP</h2>
-        <p>Soumettez nous votre top ! Votre avis nous interesse !<br></p>
-        <p>Cliquez  <a href="VotreTop.html">ici</a> pour y acceder!</p>
-        <!-- Menu de navigation -->
-        <h1 id="Index"><u>Index</u></h1>
-        <nav class="menu">
-            <ul>
-                <li><a href="pokemons.html">Pokemons</a></li>
-                <li><a href="musiques.html">Musiques</a></li>
-                <li><a href="lieux.html">Lieux</a></li>
-                <li><a href="VotreTop.html">Votre Top 10</a></li>
-            </ul>
-        </nav>
-    </div>
+    <!-- Contenu de la page -->
+
+    <h1>Nos TOP 10 Pokemon</h1>
+    <p>Sur ce site nous allons vous presenter nos differents top 10 de Pokemon.</p>
+    <h2>TOP 10 des Pokemons</h2>
+    <p>
+        Il existe plus de 1000 pokemons, il est donc assez difficile de s'y retrouver ,
+        nous avons alors decidé de vous montrer notre top 10 de nos pokemons
+        favoris respectifs.
+    </p>
+    <p>Cliquez <a href="pokemons.html">ici</a> pour y acceder!</p>
+    <img src="img/top10pokemons.png" alt="Pleins de pokemons accompagnés de deux dresseurs courrant apres un Jirachi"> 
+    
+    <h2>TOP 10 des Musiques</h2>
+    <p>L'univers de Pokemon est un univers florissant de musiques. Nous vous proposons alors un <em>Best-of</em> de nos musiques favories.</p>
+    <p>Cliquez  <a href="musiques.html">ici</a> pour y acceder!</p>
+    <img src="img/Musica.png" alt="Pokemons avec un dresseur et de la musique"> 
+    
+    <h2>TOP 10 des Endroits</h2>
+    <p>Au cours de l'aventure nous avons l'occasion de se balader dans un grand nombre de lieux memorables, voici notre selection de ceux qui sont le plus memorables</p>
+    <p>Cliquez  <a href="lieux.html">ici</a> pour y acceder!</p>
+    <img src="img/Fleurville.png" alt="image pour lieux"> 
+    
+    <h2>Votre TOP</h2>
+    <p>Soumettez nous votre top ! Votre avis nous interesse !<br></p>
+    <p>Cliquez  <a href="VotreTop.html">ici</a> pour y acceder!</p>
+    <!-- Menu de navigation -->
+    <h1 id="Index"><u>Index</u></h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="pokemons.html">Pokemons</a></li>
+            <li><a href="musiques.html">Musiques</a></li>
+            <li><a href="lieux.html">Lieux</a></li>
+            <li><a href="VotreTop.html">Votre Top 10</a></li>
+        </ul>
+    </nav>
+    <!-- Script du bouton -->
     <script>
         function myFunction() {
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
-        // Get the button
+        // lien avec le bouton 
         let mybutton = document.getElementById("topBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
+        // montre le bouton quand l'utilisateur scrolle 20px de la page
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
@@ -82,7 +86,7 @@
             }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
+        // quand le bouton est cliqué , on retourne en haut de la page
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
